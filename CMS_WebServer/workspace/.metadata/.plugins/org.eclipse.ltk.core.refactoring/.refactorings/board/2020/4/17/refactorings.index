@@ -1,0 +1,48 @@
+1587350311676	Delete element
+1587351470312	Delete element
+1587351500830	Move file
+1587351583492	Move file
+1587351645806	Delete element
+1587352625690	Move file
+1587359015492	Rename resource 'header.jsp'
+1587362058585	Delete element
+1587369634831	Rename resource 'announce.jsp'
+1587436718112	Copy file
+1587452374998	Delete element
+1587452394623	Rename resource 'listSearch.jsp'
+1587452416205	Delete element
+1587453086578	Rename resource 'board'
+1587453529673	Rename type 'BoardDAO'
+1587453542477	Rename type 'BoardDAOImpl'
+1587453555931	Rename type 'BoardVO'
+1587453571306	Rename type 'BoardService'
+1587453582337	Rename type 'BoardServiceImpl'
+1587453591869	Rename type 'BoardController'
+1587453776515	Rename resource 'boardMapper.xml'
+1587462490306	Copy compilation unit
+1587462988493	Copy compilation unit
+1587463225688	Delete element
+1587463383366	Rename type 'MemberVo'
+1587518898069	Rename type 'MemberServic'
+1587519305072	Rename resource 'member_Mapper.xml'
+1587520746833	Rename resource 'memberMapper.xml'
+1587520768770	Rename resource 'member_Mapper.xml'
+1587521394698	Rename type 'MemberVO'
+1587521418383	Rename type 'MemberVo'
+1587522408872	Delete elements
+1587522413687	Delete element
+1587522419501	Delete elements
+1587522435612	Delete element
+1587522442287	Delete element
+1587532347473	Rename type 'MemerConroller'
+1587532396645	Rename type 'MemerController'
+1587535934847	Delete element
+1587535961066	Delete element
+1587536189097	Rename resource 'login.jsp'
+1587536227864	Delete element
+1587536921364	Move file
+1587536940925	Move file
+1587537602725	Rename resource 'bmt'
+1587537980320	Delete element
+1587612103943	Rename resource 'announcement.jsp'
+1587612131376	Rename resource 'board.jsp'

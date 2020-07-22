@@ -1,0 +1,56 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시물 목록</title>
+</head>
+<body>
+<table>
+ <thead>
+  <tr>
+   <th>번호</th>
+   <th>제목</th>
+   <th>작성일</th>
+   <th>작성자</th>
+   <th>조회수</th>
+  </tr>
+ </thead>
+ 
+ <tbody>
+ 	<c:forEach items="${list}" var="list">
+ 		<tr>
+ 			<td>${list.idx}</td>
+ 			<td>
+ 				<a href="/board/view?idx=${list.idx}"> ${list.title}</a>
+ 			</td>
+ 			<td>${list.regDate}</td>
+ 			<td>${list.writer}</td>
+ 			<td>${list.viewCnt}</td>
+ 		</tr>
+ 	</c:forEach>
+  
+ </tbody>
+
+</table>
+
+<div>
+ <ul>
+  <c:if test="${pageMaker.prev}">
+   	<span>[<a href="listPage${pageMaker.makeQuery(pageMaker.startPage - 1)}">이전</a>]</span>
+  </c:if> 
+  
+  <c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="idx">
+   <span>[<a href="listPage${pageMaker.makeQuery(idx)}">${idx}</a>]</span>
+   		
+  </c:forEach>
+    
+  <c:if test="${pageMaker.next && pageMaker.endPage > 0}">
+   <span>[<a href="listPage${pageMaker.makeQuery(pageMaker.endPage + 1)}">다음</a>]</span>
+  </c:if> 
+ </ul>
+</div>
+
+</body>
+</html>

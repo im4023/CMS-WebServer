@@ -1,0 +1,38 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet">
+		
+		<title>goods</title>
+	</head>
+	
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+			<%@include file="../include/nav.jsp" %>
+		</nav>
+		
+		<!-- Main -->
+		<div class="container" id=goodsmain>
+			<!-- sidebar -->
+			<%@include file="../include/sidenav.jsp" %>
+			
+			<div class="business_top">
+				<div class="business_intro">
+					<span><strong>제품소개</strong></span>
+				</div>
+			</div>
+			<div class="business_bottom text-center">
+			
+			</div>
+		</div>
+
+</body>
+</html>

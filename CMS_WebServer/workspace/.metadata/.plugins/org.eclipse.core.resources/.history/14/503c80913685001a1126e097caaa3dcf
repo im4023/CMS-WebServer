@@ -1,0 +1,89 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix = "fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta name="description" content="">
+			<meta name="author" content="">
+			<link rel="stylesheet" href="/resources/css/style.css"/>
+			
+			<title>문의사항</title>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<header class="navbar navbar-expand-lg fixed-top" id="mainNav">
+			<%@include file="../include/nav.jsp" %>
+		</header>
+		
+		<!-- Main -->
+		<div class="container" id="announcementmain">
+			<!-- sidebar -->
+			<%@include file="../include/sidenav.jsp" %>
+			
+			<div class="announcement_top">
+				<div class="announcement_intro">
+					<span><strong>문의사항</strong></span>
+				</div>
+				<c:if test="${member != null}">
+					<div class ="admin_menu">
+						<button type="button" id="listSearch_btn">관리페이지</button>
+						<script>	
+						$("#listSearch_btn").click(function(){
+							self.location = "/board/listSearch";					
+						});
+						</script>
+						<button type="button" id="logout_btn"> 로그아웃</button>
+						<script>	
+						$("#logout_btn").click(function(){
+							self.location = "../bymt/logout";					
+						});
+						</script>
+					</div>
+				</c:if>
+			</div>
+			<div class="announcement_bottom text-center">
+					<form method="post">
+						<table>
+							<tbody>
+								<tr>
+									<td class ="announcement_title2">제목</td>
+									<td class ="announcement_title4"><input type="text" name="title" /></td>
+									<td class ="announcement_title2">작성자</td>
+									<td class ="announcement_title4">
+										<input type="text" name="writer"  />
+									</td>									
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<div class ="announcement_content">
+											<textarea cols="50" rows="5" name="content"></textarea>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button type="submit">작성</button>
+						
+					</form>
+		
+			</div>
+		</div>
+		
+		<!-- Footer -->	
+	    <footer class="footer" id="footer">
+		    <%@include file="../include/footer.jsp" %>
+		</footer>
+		
+		<script type="text/javascript" src="/resources/jquery/jstyle.js"></script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="formCheck"/>
+		<list key="findhistory">
+			<item value="formCheck"/>
+			<item value="bus_list"/>
+			<item value="intro"/>
+			<item value="announcement_intro2"/>
+			<item value="intro_title"/>
+			<item value="&lt;/form&gt;"/>
+			<item value="announcement_intro"/>
+			<item value="onclick=&quot;javascript:document."/>
+			<item value="&lt;form name=&quot;"/>
+			<item value="&lt;/option&gt;"/>
+			<item value="&lt;option value=&quot;"/>
+			<item value="&lt;option value=&quot;BN"/>
+			<item value="announcement_content"/>
+			<item value="getbusNum"/>
+			<item value="announcement_article"/>
+		</list>
+		<list key="replacehistory">
+			<item value="&lt;input type=&quot;hidden&quot; name= busName value =&quot;&quot;/&gt;&lt;/form&gt;"/>
+			<item value="onclick=&quot;javascript:document.BN_"/>
+			<item value="&lt;form name=&quot;BN_"/>
+			<item value=" ${param.busNum eq &quot;ex_1&quot;?&quot;selected&quot;:&quot;&quot;}&gt;급행1&lt;/option&gt;"/>
+			<item value="&lt;option value=&quot;BN_"/>
+			<item value="&lt;option value=&quot;BN"/>
+			<item value="&lt;option value=&quot;&quot;&gt;"/>
+			<item value="&lt;/option&gt;"/>
+			<item value="&lt;option&gt;"/>
+			<item value="DeaJeon"/>
+			<item value="/"/>
+			<item value="\"/>
+			<item value="admin"/>
+			<item value="phoneNum"/>
+			<item value="/announce/"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1095"/>
+		<item key="DIALOG_Y_ORIGIN" value="281"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>
